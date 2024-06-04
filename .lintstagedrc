@@ -1,0 +1,6 @@
+{
+  "*.ts": [
+    "npm lint",
+    "npm test:staged"
+  ]
+}
