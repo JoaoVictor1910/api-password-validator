@@ -1,1 +1,1 @@
-export * from './invalid-jwt-token';
+export * from './validate-password.error';
