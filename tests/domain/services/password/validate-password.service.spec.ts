@@ -20,13 +20,13 @@ describe('ValidatePasswordService', () => {
   });
 
   it('should throw if input is null', () => {
-    expect(sut.execute(emptyPasswordInputMock)).rejects.toThrow(
+    expect(() => sut.execute(emptyPasswordInputMock)).toThrow(
       ValidatePasswordError,
     );
   });
 
   it('should throw if input type is other than string', () => {
-    expect(sut.execute(numericPasswordInputMock)).rejects.toThrow(
+    expect(() => sut.execute(numericPasswordInputMock)).toThrow(
       ValidatePasswordError,
     );
   });
