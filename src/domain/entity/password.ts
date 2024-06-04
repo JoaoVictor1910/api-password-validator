@@ -1,8 +1,7 @@
-import { PasswordRules } from '@/domain/protocols';
+import { PasswordRulesValidator } from '@/domain/validators/password-rules.validator';
 
 export class Password {
   private props: PasswordProps;
-  private passwordRules: PasswordRules;
 
   private constructor(props: PasswordProps) {
     this.props = props;
@@ -17,7 +16,7 @@ export class Password {
   }
 
   get IsValid(): boolean {
-    return this.passwordRules.validate(this.password);
+    return PasswordRulesValidator.validate(this.password);
   }
 }
 

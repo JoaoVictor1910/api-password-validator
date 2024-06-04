@@ -1,7 +1,5 @@
-import { PasswordRules } from '@/domain/protocols';
-
-export class PasswordRulesValidator implements PasswordRules {
-  validate(password: string): boolean {
+export class PasswordRulesValidator {
+  static validate(password: string): boolean {
     const hasMinLength = password.length >= 9;
     const hasDigit = /[0-9]/.test(password);
     const hasLowercase = /[a-z]/.test(password);
