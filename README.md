@@ -1,6 +1,6 @@
 # api-password-validator (EN-US)
-[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/JoaoVictor1910/api-password-validator/blob/main/README.pt.md)
-[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/JoaoVictor1910/api-password-validator/blob/main/README.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/JoaoVictor1910/api-password-validator/blob/main/README.md)
+[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/JoaoVictor1910/api-password-validator/blob/main/README.pt.md)
 
 The purpose of this application is to be an api-web for password validation, following a set of rules.
 
