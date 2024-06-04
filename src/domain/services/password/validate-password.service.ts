@@ -16,7 +16,11 @@ export class ValidatePasswordService {
     const { input } = params;
 
     // Second validation. After the dto, before the validate method
-    if (!input || typeof input !== 'string') {
+    if (
+      input === null ||
+      input === undefined ||
+      (input && typeof input !== 'string')
+    ) {
       throw new ValidatePasswordError('input is invalid.');
     }
 
